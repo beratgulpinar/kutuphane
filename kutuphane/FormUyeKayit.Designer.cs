@@ -168,6 +168,7 @@
             this.bttnKaydet.TabIndex = 15;
             this.bttnKaydet.Text = "Kaydet";
             this.bttnKaydet.UseVisualStyleBackColor = true;
+            this.bttnKaydet.Click += new System.EventHandler(this.BttnKaydet_Click);
             // 
             // FormUyeKayit
             // 

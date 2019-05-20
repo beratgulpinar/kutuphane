@@ -70,6 +70,7 @@
             this.bttnKaydet.TabIndex = 28;
             this.bttnKaydet.Text = "Kaydet";
             this.bttnKaydet.UseVisualStyleBackColor = true;
+            this.bttnKaydet.Click += new System.EventHandler(this.BttnKaydet_Click_1);
             // 
             // txtBasimTarih
             // 

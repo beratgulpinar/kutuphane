@@ -42,6 +42,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // bttnAnasayfa
@@ -75,7 +77,7 @@
             // 
             // txtEmail
             // 
-            this.txtEmail.Location = new System.Drawing.Point(409, 141);
+            this.txtEmail.Location = new System.Drawing.Point(386, 141);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(151, 20);
             this.txtEmail.TabIndex = 25;
@@ -105,7 +107,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label5.Location = new System.Drawing.Point(431, 106);
+            this.label5.Location = new System.Drawing.Point(408, 106);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(110, 21);
             this.label5.TabIndex = 20;
@@ -154,12 +156,20 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button1.Location = new System.Drawing.Point(457, 177);
+            this.button1.Location = new System.Drawing.Point(434, 177);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(58, 28);
             this.button1.TabIndex = 29;
             this.button1.Text = "Ara";
             this.button1.UseVisualStyleBackColor = true;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(21, 224);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(539, 105);
+            this.dataGridView1.TabIndex = 30;
             // 
             // FormKitapOdunc
             // 
@@ -167,6 +177,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::kutuphane.Properties.Resources._6;
             this.ClientSize = new System.Drawing.Size(584, 341);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.bttnKaydet);
             this.Controls.Add(this.txtTeslimTarih);
@@ -184,6 +195,7 @@
             this.Name = "FormKitapOdunc";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Kitap Ödünç";
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -204,5 +216,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }

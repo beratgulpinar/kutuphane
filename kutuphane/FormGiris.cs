@@ -18,9 +18,13 @@ namespace kutuphane
             InitializeComponent();
         }
 
+        SqlConnection sqlConn = new SqlConnection(@"Data Source=DESKTOP-2KBETUG\SQLEXPRESS;Initial Catalog=dbKutuphane;Integrated Security=True");
+
         private void BttnGiris_Click(object sender, EventArgs e)
         {
-            SqlConnection sqlConn = new SqlConnection(@"Data Source=DESKTOP-2KBETUG\SQLEXPRESS;Initial Catalog=dbKutuphane;Integrated Security=True");
+
+            sqlConn.Open();
+
             string query = "Select * from Giris Where KullaniciAdi = '" + txtKullaniciAdi.Text.Trim() + "' and Sifre = '" + txtSifre.Text.Trim() + "'";
             SqlDataAdapter sda = new SqlDataAdapter(query, sqlConn);
             DataTable dtbl = new DataTable();
@@ -35,6 +39,9 @@ namespace kutuphane
             {
                 MessageBox.Show("Kullanıcı Adını ve Şifreni Kontrol Et!");
             }
+
+            sqlConn.Close();
+
         }
 
         private void BttnCikis_Click(object sender, EventArgs e)
