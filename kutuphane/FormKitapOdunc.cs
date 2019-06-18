@@ -64,7 +64,6 @@ namespace kutuphane
             }
 
             sqlConn.Close();
-
         }
 
         private void FormKitapOdunc_Load(object sender, EventArgs e)
