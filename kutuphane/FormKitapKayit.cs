@@ -27,68 +27,34 @@ namespace kutuphane
             objFormAnasayfa.Show();
         }
 
-        private void Label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void BttnKaydet_Click(object sender, EventArgs e)
-        {
-            
-        }
-
         private void BttnKaydet_Click_1(object sender, EventArgs e)
         {
 
             sqlConn.Open();
+            SqlCommand komut = new SqlCommand("insert into KitapKayit(KitapNo,KitapAdi,KitapTuru,BasimTarihi,Yazar,Sayfa,YayinEvi,Stok) values (@KitapNo,@KitapAdi,@KitapTuru,@BasimTarihi,@Yazar,@Sayfa,@YayinEvi,@Stok)", sqlConn);
+            komut.Parameters.AddWithValue("@KitapNo", txtKitapNo.Text);
+            komut.Parameters.AddWithValue("@KitapAdi", txtKitapAdi.Text);
+            komut.Parameters.AddWithValue("@KitapTuru", txtKitapTuru.Text);
+            komut.Parameters.AddWithValue("@BasimTarihi", txtBasimTarih.Text);
+            komut.Parameters.AddWithValue("@Yazar", txtYazar.Text);
+            komut.Parameters.AddWithValue("@Sayfa", txtSayfa.Text);
+            komut.Parameters.AddWithValue("@YayinEvi", txtYayinEvi.Text);
+            komut.Parameters.AddWithValue("@Stok", txtStok.Text);
 
-            SqlCommand UyeKayitKomutu = new SqlCommand("KitapKayitPro", sqlConn);
-            UyeKayitKomutu.CommandType = CommandType.StoredProcedure;
-
-            SqlParameter KitapNo = new SqlParameter("@KitapNo", SqlDbType.Int);
-            KitapNo.Direction = ParameterDirection.Input;
-            KitapNo.Value = txtKitapNo.Text;
-            UyeKayitKomutu.Parameters.Add(KitapNo);
-
-            SqlParameter KitapAdi = new SqlParameter("@KitapAdi", SqlDbType.NVarChar, 50);
-            KitapAdi.Direction = ParameterDirection.Input;
-            KitapAdi.Value = txtKitapAdi.Text;
-            UyeKayitKomutu.Parameters.Add(KitapAdi);
-
-            SqlParameter KitapTuru = new SqlParameter("@KitapTuru", SqlDbType.NVarChar, 50);
-            KitapTuru.Direction = ParameterDirection.Input;
-            KitapTuru.Value = txtKitapTuru.Text;
-            UyeKayitKomutu.Parameters.Add(KitapTuru);
-
-            SqlParameter BasimTarihi = new SqlParameter("@BasimTarihi", SqlDbType.Date);
-            BasimTarihi.Direction = ParameterDirection.Input;
-            BasimTarihi.Value = txtBasimTarih.Text;
-            UyeKayitKomutu.Parameters.Add(BasimTarihi);
-
-            SqlParameter Yazar = new SqlParameter("@Yazar", SqlDbType.NVarChar, 50);
-            Yazar.Direction = ParameterDirection.Input;
-            Yazar.Value = txtYazar.Text;
-            UyeKayitKomutu.Parameters.Add(Yazar);
-
-            SqlParameter Sayfa = new SqlParameter("@Sayfa", SqlDbType.NVarChar, 50);
-            Sayfa.Direction = ParameterDirection.Input;
-            Sayfa.Value = txtSayfa.Text;
-            UyeKayitKomutu.Parameters.Add(Sayfa);
-
-            SqlParameter YayinEvi = new SqlParameter("@YayinEvi", SqlDbType.NVarChar, 50);
-            YayinEvi.Direction = ParameterDirection.Input;
-            YayinEvi.Value = txtYayinEvi.Text;
-            UyeKayitKomutu.Parameters.Add(YayinEvi);
-
-            SqlParameter Stok = new SqlParameter("@Stok", SqlDbType.Int);
-            Stok.Direction = ParameterDirection.Input;
-            Stok.Value = txtStok.Text;
-            UyeKayitKomutu.Parameters.Add(Stok);
 
             try
             {
-                UyeKayitKomutu.ExecuteNonQuery();
+                komut.ExecuteNonQuery();
                 MessageBox.Show("Kitap Eklendi.");
+
+                txtKitapNo.Clear();
+                txtKitapAdi.Clear();
+                txtKitapTuru.Clear();
+                txtBasimTarih.Clear();
+                txtYazar.Clear();
+                txtSayfa.Clear();
+                txtYayinEvi.Clear();
+                txtStok.Clear();
             }
             catch
             {
@@ -97,18 +63,6 @@ namespace kutuphane
 
             sqlConn.Close();
 
-            txtKitapNo.Clear();
-            txtKitapAdi.Clear();
-            txtKitapTuru.Clear();
-            txtBasimTarih.Clear();
-            txtYazar.Clear();
-            txtSayfa.Clear();
-            txtYayinEvi.Clear();
-            txtStok.Clear();
-        }
-
-        private void BttnTemizle_Click(object sender, EventArgs e)
-        {
             
         }
     }

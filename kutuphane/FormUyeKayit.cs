@@ -22,23 +22,11 @@ namespace kutuphane
 
         SqlConnection sqlConn = new SqlConnection(@"Data Source=DESKTOP-2KBETUG\SQLEXPRESS;Initial Catalog=dbKutuphane;Integrated Security=True");
 
-        public void verilerigoster(string veriler)
-        {
-            SqlDataAdapter da = new SqlDataAdapter(veriler, sqlConn);
-            DataSet ds = new DataSet();
-            da.Fill(ds);
-        }
-
         private void BttnAnasayfa_Click(object sender, EventArgs e)
         {
             FormAnasayfa objFormAnasayfa = new FormAnasayfa();
             this.Hide();
             objFormAnasayfa.Show();
-        }
-
-        private void TextBox4_TextChanged(object sender, EventArgs e)
-        {
-
         }
 
         private void BttnKaydet_Click(object sender, EventArgs e)
@@ -51,10 +39,18 @@ namespace kutuphane
             komut.Parameters.AddWithValue("@Telefon", txtTelefon.Text);
             komut.Parameters.AddWithValue("@Email", txtEmail.Text);
             komut.Parameters.AddWithValue("@Adres", txtAdres.Text);
+
             try
             {
                 komut.ExecuteNonQuery();
                 MessageBox.Show("Üye Eklendi.");
+
+                txtTcNo.Clear();
+                txtAd.Clear();
+                txtSoyad.Clear();
+                txtTelefon.Clear();
+                txtEmail.Clear();
+                txtAdres.Clear();
             }
             catch
             {
@@ -63,16 +59,6 @@ namespace kutuphane
 
             sqlConn.Close();
 
-            txtTcNo.Clear();
-            txtAd.Clear();
-            txtSoyad.Clear();
-            txtTelefon.Clear();
-            txtEmail.Clear();
-            txtAdres.Clear();
-        }
-
-        private void BttnTemizle_Click(object sender, EventArgs e)
-        {
             
         }
     }

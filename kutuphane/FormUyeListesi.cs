@@ -63,10 +63,5 @@ namespace kutuphane
             sqlConn.Close();
             txtUyeSil.Clear();
         }
-
-        private void TxtKitapSil_TextChanged(object sender, EventArgs e)
-        {
-
-        }
     }
 }

@@ -42,11 +42,11 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.txtYayinEvi = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.txtStok = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // bttnAnasayfa
@@ -164,17 +164,6 @@
             this.label2.TabIndex = 17;
             this.label2.Text = "Kitap Adı";
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.Location = new System.Drawing.Point(85, 17);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(77, 21);
-            this.label1.TabIndex = 16;
-            this.label1.Text = "Kitap No";
-            this.label1.Click += new System.EventHandler(this.Label1_Click);
-            // 
             // txtYayinEvi
             // 
             this.txtYayinEvi.Location = new System.Drawing.Point(233, 237);
@@ -209,12 +198,23 @@
             this.label8.TabIndex = 31;
             this.label8.Text = "Stok";
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label1.Location = new System.Drawing.Point(85, 17);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(77, 21);
+            this.label1.TabIndex = 33;
+            this.label1.Text = "Kitap No";
+            // 
             // FormKitapKayit
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::kutuphane.Properties.Resources._6;
             this.ClientSize = new System.Drawing.Size(584, 341);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.txtStok);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.txtYayinEvi);
@@ -231,7 +231,6 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.bttnAnasayfa);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormKitapKayit";
@@ -257,10 +256,10 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtYayinEvi;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox txtStok;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label1;
     }
 }

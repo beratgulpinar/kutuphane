@@ -17,21 +17,11 @@ namespace kutuphane
             InitializeComponent();
         }
 
-        private void Button2_Click(object sender, EventArgs e)
-        {
-            
-        }
-
         private void BttnUyeKayit_Click(object sender, EventArgs e)
         {
             FormUyeKayit objFormUyeKayit = new FormUyeKayit();
             this.Hide();
             objFormUyeKayit.Show();
-        }
-
-        private void Button1_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void BttnUyeListesi_Click(object sender, EventArgs e)

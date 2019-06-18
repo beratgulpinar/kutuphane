@@ -33,8 +33,8 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.bttnUyeleriGoster = new System.Windows.Forms.Button();
             this.bttnUyeSil = new System.Windows.Forms.Button();
-            this.txtUyeSil = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.txtUyeSil = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -82,15 +82,6 @@
             this.bttnUyeSil.UseVisualStyleBackColor = false;
             this.bttnUyeSil.Click += new System.EventHandler(this.BttnKitapSil_Click);
             // 
-            // txtUyeSil
-            // 
-            this.txtUyeSil.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtUyeSil.Location = new System.Drawing.Point(212, 290);
-            this.txtUyeSil.Name = "txtUyeSil";
-            this.txtUyeSil.Size = new System.Drawing.Size(200, 27);
-            this.txtUyeSil.TabIndex = 8;
-            this.txtUyeSil.TextChanged += new System.EventHandler(this.TxtKitapSil_TextChanged);
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -102,14 +93,22 @@
             this.label1.Text = "Silinecek Üye Tc:";
             this.label1.Click += new System.EventHandler(this.Label1_Click);
             // 
+            // txtUyeSil
+            // 
+            this.txtUyeSil.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtUyeSil.Location = new System.Drawing.Point(212, 290);
+            this.txtUyeSil.Name = "txtUyeSil";
+            this.txtUyeSil.Size = new System.Drawing.Size(200, 27);
+            this.txtUyeSil.TabIndex = 10;
+            // 
             // FormUyeListesi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::kutuphane.Properties.Resources._6;
             this.ClientSize = new System.Drawing.Size(584, 341);
-            this.Controls.Add(this.bttnUyeSil);
             this.Controls.Add(this.txtUyeSil);
+            this.Controls.Add(this.bttnUyeSil);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.bttnUyeleriGoster);
             this.Controls.Add(this.dataGridView1);
@@ -130,7 +129,7 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button bttnUyeleriGoster;
         private System.Windows.Forms.Button bttnUyeSil;
-        private System.Windows.Forms.TextBox txtUyeSil;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox txtUyeSil;
     }
 }
