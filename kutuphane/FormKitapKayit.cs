@@ -62,8 +62,150 @@ namespace kutuphane
             }
 
             sqlConn.Close();
+        }
 
-            
+        private void TxtKitapNo_Enter(object sender, EventArgs e)
+        {
+            if (txtKitapNo.Text=="--Kitap No Giriniz--")
+            {
+                txtKitapNo.Text = "";
+                txtKitapNo.ForeColor = Color.Black;
+            }
+        }
+
+        private void TxtKitapNo_Leave(object sender, EventArgs e)
+        {
+            if (txtKitapNo.Text == "")
+            {
+                txtKitapNo.Text = "--Kitap No Giriniz--";
+                txtKitapNo.ForeColor = Color.DimGray;
+            }
+        }
+
+        private void TxtKitapAdi_Enter(object sender, EventArgs e)
+        {
+            if (txtKitapAdi.Text == "--Kitap Adı Giriniz--")
+            {
+                txtKitapAdi.Text = "";
+                txtKitapAdi.ForeColor = Color.Black;
+            }
+        }
+
+        private void TxtKitapAdi_Leave(object sender, EventArgs e)
+        {
+            if (txtKitapAdi.Text == "")
+            {
+                txtKitapAdi.Text = "--Kitap Adı Giriniz--";
+                txtKitapAdi.ForeColor = Color.DimGray;
+            }
+        }
+
+        private void TxtKitapTuru_Enter(object sender, EventArgs e)
+        {
+            if (txtKitapTuru.Text == "--Kitap Türü Giriniz--")
+            {
+                txtKitapTuru.Text = "";
+                txtKitapTuru.ForeColor = Color.Black;
+            }
+        }
+
+        private void TxtKitapTuru_Leave(object sender, EventArgs e)
+        {
+            if (txtKitapTuru.Text == "")
+            {
+                txtKitapTuru.Text = "--Kitap Türü Giriniz--";
+                txtKitapTuru.ForeColor = Color.DimGray;
+            }
+        }
+
+        private void TxtBasimTarih_Enter(object sender, EventArgs e)
+        {
+            if (txtBasimTarih.Text == "--Basım Tarihi Giriniz--")
+            {
+                txtBasimTarih.Text = "";
+                txtBasimTarih.ForeColor = Color.Black;
+            }
+        }
+
+        private void TxtBasimTarih_Leave(object sender, EventArgs e)
+        {
+            if (txtBasimTarih.Text == "")
+            {
+                txtBasimTarih.Text = "--Basım Tarihi Giriniz--";
+                txtBasimTarih.ForeColor = Color.DimGray;
+            }
+        }
+
+        private void TxtYazar_Enter(object sender, EventArgs e)
+        {
+            if (txtYazar.Text == "--Yazar Giriniz--")
+            {
+                txtYazar.Text = "";
+                txtYazar.ForeColor = Color.Black;
+            }
+        }
+
+        private void TxtYazar_Leave(object sender, EventArgs e)
+        {
+            if (txtYazar.Text == "")
+            {
+                txtYazar.Text = "--Yazar Giriniz--";
+                txtYazar.ForeColor = Color.DimGray;
+            }
+        }
+
+        private void TxtSayfa_Enter(object sender, EventArgs e)
+        {
+            if (txtSayfa.Text == "--Sayfa Sayısı Giriniz--")
+            {
+                txtSayfa.Text = "";
+                txtSayfa.ForeColor = Color.Black;
+            }
+        }
+
+        private void TxtSayfa_Leave(object sender, EventArgs e)
+        {
+            if (txtSayfa.Text == "")
+            {
+                txtSayfa.Text = "--Sayfa Sayısı Giriniz--";
+                txtSayfa.ForeColor = Color.DimGray;
+            }
+        }
+
+        private void TxtYayinEvi_Enter(object sender, EventArgs e)
+        {
+            if (txtYayinEvi.Text == "--Yayın Evi Giriniz--")
+            {
+                txtYayinEvi.Text = "";
+                txtYayinEvi.ForeColor = Color.Black;
+            }
+        }
+
+        private void TxtYayinEvi_Leave(object sender, EventArgs e)
+        {
+            if (txtYayinEvi.Text == "")
+            {
+                txtYayinEvi.Text = "--Yayın Evi Giriniz--";
+                txtYayinEvi.ForeColor = Color.DimGray;
+            }
+        }
+
+        private void TxtStok_Enter(object sender, EventArgs e)
+        {
+            if (txtStok.Text == "--Stok Giriniz--")
+            {
+                txtStok.Text = "";
+                txtStok.ForeColor = Color.Black;
+            }
+        }
+
+        private void TxtStok_Leave(object sender, EventArgs e)
+        {
+            if (txtStok.Text == "")
+            {
+                txtStok.Text = "--Stok Giriniz--";
+                txtStok.ForeColor = Color.DimGray;
+            }
         }
     }
 }

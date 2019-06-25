@@ -31,9 +31,9 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormKitapOdunc));
             this.bttnAnasayfa = new System.Windows.Forms.Button();
             this.bttnKaydet = new System.Windows.Forms.Button();
-            this.txtTeslimTarih = new System.Windows.Forms.TextBox();
+            this.txtTeslimTarihi = new System.Windows.Forms.TextBox();
             this.txtKitapAra = new System.Windows.Forms.TextBox();
-            this.txtKiralamaTarih = new System.Windows.Forms.TextBox();
+            this.txtKiralamaTarihi = new System.Windows.Forms.TextBox();
             this.txtKiralayanTcNo = new System.Windows.Forms.TextBox();
             this.txtKitapNo = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
@@ -43,7 +43,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.bttnAra = new System.Windows.Forms.Button();
-            this.label6 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -62,7 +61,7 @@
             // bttnKaydet
             // 
             this.bttnKaydet.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.bttnKaydet.Location = new System.Drawing.Point(214, 167);
+            this.bttnKaydet.Location = new System.Drawing.Point(283, 158);
             this.bttnKaydet.Name = "bttnKaydet";
             this.bttnKaydet.Size = new System.Drawing.Size(91, 28);
             this.bttnKaydet.TabIndex = 28;
@@ -70,56 +69,77 @@
             this.bttnKaydet.UseVisualStyleBackColor = true;
             this.bttnKaydet.Click += new System.EventHandler(this.BttnKaydet_Click);
             // 
-            // txtTeslimTarih
+            // txtTeslimTarihi
             // 
-            this.txtTeslimTarih.Location = new System.Drawing.Point(182, 141);
-            this.txtTeslimTarih.Name = "txtTeslimTarih";
-            this.txtTeslimTarih.Size = new System.Drawing.Size(151, 20);
-            this.txtTeslimTarih.TabIndex = 27;
+            this.txtTeslimTarihi.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtTeslimTarihi.Location = new System.Drawing.Point(223, 127);
+            this.txtTeslimTarihi.Name = "txtTeslimTarihi";
+            this.txtTeslimTarihi.Size = new System.Drawing.Size(151, 26);
+            this.txtTeslimTarihi.TabIndex = 27;
             // 
             // txtKitapAra
             // 
-            this.txtKitapAra.Location = new System.Drawing.Point(440, 164);
+            this.txtKitapAra.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtKitapAra.ForeColor = System.Drawing.Color.DimGray;
+            this.txtKitapAra.Location = new System.Drawing.Point(12, 250);
             this.txtKitapAra.Name = "txtKitapAra";
-            this.txtKitapAra.Size = new System.Drawing.Size(117, 20);
+            this.txtKitapAra.Size = new System.Drawing.Size(140, 27);
             this.txtKitapAra.TabIndex = 25;
+            this.txtKitapAra.Text = "--Kitap Adı Giriniz--";
+            this.txtKitapAra.Enter += new System.EventHandler(this.TxtKitapAra_Enter);
+            this.txtKitapAra.Leave += new System.EventHandler(this.TxtKitapAra_Leave);
             // 
-            // txtKiralamaTarih
+            // txtKiralamaTarihi
             // 
-            this.txtKiralamaTarih.Location = new System.Drawing.Point(182, 106);
-            this.txtKiralamaTarih.Name = "txtKiralamaTarih";
-            this.txtKiralamaTarih.Size = new System.Drawing.Size(151, 20);
-            this.txtKiralamaTarih.TabIndex = 24;
+            this.txtKiralamaTarihi.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtKiralamaTarihi.Location = new System.Drawing.Point(223, 92);
+            this.txtKiralamaTarihi.Name = "txtKiralamaTarihi";
+            this.txtKiralamaTarihi.Size = new System.Drawing.Size(151, 26);
+            this.txtKiralamaTarihi.TabIndex = 24;
             // 
             // txtKiralayanTcNo
             // 
-            this.txtKiralayanTcNo.Location = new System.Drawing.Point(182, 70);
+            this.txtKiralayanTcNo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtKiralayanTcNo.ForeColor = System.Drawing.Color.DimGray;
+            this.txtKiralayanTcNo.Location = new System.Drawing.Point(223, 56);
             this.txtKiralayanTcNo.Name = "txtKiralayanTcNo";
-            this.txtKiralayanTcNo.Size = new System.Drawing.Size(151, 20);
+            this.txtKiralayanTcNo.Size = new System.Drawing.Size(151, 26);
             this.txtKiralayanTcNo.TabIndex = 23;
+            this.txtKiralayanTcNo.Text = "--Tc No Giriniz--";
+            this.txtKiralayanTcNo.Enter += new System.EventHandler(this.TxtKiralayanTcNo_Enter);
+            this.txtKiralayanTcNo.Leave += new System.EventHandler(this.TxtKiralayanTcNo_Leave);
             // 
             // txtKitapNo
             // 
-            this.txtKitapNo.Location = new System.Drawing.Point(182, 32);
+            this.txtKitapNo.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtKitapNo.ForeColor = System.Drawing.Color.DimGray;
+            this.txtKitapNo.Location = new System.Drawing.Point(223, 17);
             this.txtKitapNo.Name = "txtKitapNo";
-            this.txtKitapNo.Size = new System.Drawing.Size(151, 20);
+            this.txtKitapNo.Size = new System.Drawing.Size(151, 27);
             this.txtKitapNo.TabIndex = 22;
+            this.txtKitapNo.Text = "--Kitap No Giriniz--";
+            this.txtKitapNo.Enter += new System.EventHandler(this.TxtKitapNo_Enter);
+            this.txtKitapNo.Leave += new System.EventHandler(this.TxtKitapNo_Leave);
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label5.Location = new System.Drawing.Point(444, 129);
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.Location = new System.Drawing.Point(20, 225);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(110, 21);
+            this.label5.Size = new System.Drawing.Size(126, 22);
             this.label5.TabIndex = 20;
             this.label5.Text = "Kitap Arama";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label4.Location = new System.Drawing.Point(34, 138);
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(92, 129);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(99, 21);
             this.label4.TabIndex = 19;
@@ -128,8 +148,10 @@
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label3.Location = new System.Drawing.Point(34, 103);
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(92, 94);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(122, 21);
             this.label3.TabIndex = 18;
@@ -138,8 +160,10 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label2.Location = new System.Drawing.Point(34, 67);
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(92, 58);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(54, 21);
             this.label2.TabIndex = 17;
@@ -148,8 +172,10 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.Location = new System.Drawing.Point(34, 29);
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(92, 20);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(77, 21);
             this.label1.TabIndex = 16;
@@ -158,16 +184,16 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(21, 224);
+            this.dataGridView1.Location = new System.Drawing.Point(223, 201);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(539, 105);
+            this.dataGridView1.Size = new System.Drawing.Size(343, 128);
             this.dataGridView1.TabIndex = 30;
             // 
             // bttnAra
             // 
             this.bttnAra.BackColor = System.Drawing.Color.Lime;
             this.bttnAra.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.bttnAra.Location = new System.Drawing.Point(474, 190);
+            this.bttnAra.Location = new System.Drawing.Point(159, 249);
             this.bttnAra.Name = "bttnAra";
             this.bttnAra.Size = new System.Drawing.Size(58, 28);
             this.bttnAra.TabIndex = 31;
@@ -175,29 +201,18 @@
             this.bttnAra.UseVisualStyleBackColor = false;
             this.bttnAra.Click += new System.EventHandler(this.BttnAra_Click);
             // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label6.Location = new System.Drawing.Point(352, 164);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(82, 21);
-            this.label6.TabIndex = 32;
-            this.label6.Text = "Kitap Adı";
-            // 
             // FormKitapOdunc
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::kutuphane.Properties.Resources._6;
             this.ClientSize = new System.Drawing.Size(584, 341);
-            this.Controls.Add(this.label6);
             this.Controls.Add(this.bttnAra);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.bttnKaydet);
-            this.Controls.Add(this.txtTeslimTarih);
+            this.Controls.Add(this.txtTeslimTarihi);
             this.Controls.Add(this.txtKitapAra);
-            this.Controls.Add(this.txtKiralamaTarih);
+            this.Controls.Add(this.txtKiralamaTarihi);
             this.Controls.Add(this.txtKiralayanTcNo);
             this.Controls.Add(this.txtKitapNo);
             this.Controls.Add(this.label5);
@@ -221,9 +236,9 @@
 
         private System.Windows.Forms.Button bttnAnasayfa;
         private System.Windows.Forms.Button bttnKaydet;
-        private System.Windows.Forms.TextBox txtTeslimTarih;
+        private System.Windows.Forms.TextBox txtTeslimTarihi;
         private System.Windows.Forms.TextBox txtKitapAra;
-        private System.Windows.Forms.TextBox txtKiralamaTarih;
+        private System.Windows.Forms.TextBox txtKiralamaTarihi;
         private System.Windows.Forms.TextBox txtKiralayanTcNo;
         private System.Windows.Forms.TextBox txtKitapNo;
         private System.Windows.Forms.Label label5;
@@ -233,6 +248,5 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button bttnAra;
-        private System.Windows.Forms.Label label6;
     }
 }

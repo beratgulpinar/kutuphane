@@ -64,7 +64,7 @@
             // bttnKaydet
             // 
             this.bttnKaydet.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.bttnKaydet.Location = new System.Drawing.Point(293, 306);
+            this.bttnKaydet.Location = new System.Drawing.Point(293, 304);
             this.bttnKaydet.Name = "bttnKaydet";
             this.bttnKaydet.Size = new System.Drawing.Size(91, 29);
             this.bttnKaydet.TabIndex = 28;
@@ -74,51 +74,83 @@
             // 
             // txtBasimTarih
             // 
-            this.txtBasimTarih.Location = new System.Drawing.Point(233, 129);
+            this.txtBasimTarih.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtBasimTarih.ForeColor = System.Drawing.Color.DimGray;
+            this.txtBasimTarih.Location = new System.Drawing.Point(233, 126);
             this.txtBasimTarih.Name = "txtBasimTarih";
-            this.txtBasimTarih.Size = new System.Drawing.Size(151, 20);
+            this.txtBasimTarih.Size = new System.Drawing.Size(151, 27);
             this.txtBasimTarih.TabIndex = 27;
+            this.txtBasimTarih.Text = "--Basım Tarihi Giriniz--";
+            this.txtBasimTarih.Enter += new System.EventHandler(this.TxtBasimTarih_Enter);
+            this.txtBasimTarih.Leave += new System.EventHandler(this.TxtBasimTarih_Leave);
             // 
             // txtSayfa
             // 
-            this.txtSayfa.Location = new System.Drawing.Point(233, 200);
+            this.txtSayfa.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtSayfa.ForeColor = System.Drawing.Color.DimGray;
+            this.txtSayfa.Location = new System.Drawing.Point(233, 197);
             this.txtSayfa.Name = "txtSayfa";
-            this.txtSayfa.Size = new System.Drawing.Size(151, 20);
+            this.txtSayfa.Size = new System.Drawing.Size(151, 27);
             this.txtSayfa.TabIndex = 26;
+            this.txtSayfa.Text = "--Sayfa Sayısı Giriniz--";
+            this.txtSayfa.Enter += new System.EventHandler(this.TxtSayfa_Enter);
+            this.txtSayfa.Leave += new System.EventHandler(this.TxtSayfa_Leave);
             // 
             // txtYazar
             // 
-            this.txtYazar.Location = new System.Drawing.Point(233, 164);
+            this.txtYazar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtYazar.ForeColor = System.Drawing.Color.DimGray;
+            this.txtYazar.Location = new System.Drawing.Point(233, 161);
             this.txtYazar.Name = "txtYazar";
-            this.txtYazar.Size = new System.Drawing.Size(151, 20);
+            this.txtYazar.Size = new System.Drawing.Size(151, 27);
             this.txtYazar.TabIndex = 25;
+            this.txtYazar.Text = "--Yazar Giriniz--";
+            this.txtYazar.Enter += new System.EventHandler(this.TxtYazar_Enter);
+            this.txtYazar.Leave += new System.EventHandler(this.TxtYazar_Leave);
             // 
             // txtKitapTuru
             // 
-            this.txtKitapTuru.Location = new System.Drawing.Point(233, 94);
+            this.txtKitapTuru.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtKitapTuru.ForeColor = System.Drawing.Color.DimGray;
+            this.txtKitapTuru.Location = new System.Drawing.Point(233, 91);
             this.txtKitapTuru.Name = "txtKitapTuru";
-            this.txtKitapTuru.Size = new System.Drawing.Size(151, 20);
+            this.txtKitapTuru.Size = new System.Drawing.Size(151, 27);
             this.txtKitapTuru.TabIndex = 24;
+            this.txtKitapTuru.Text = "--Kitap Türü Giriniz--";
+            this.txtKitapTuru.Enter += new System.EventHandler(this.TxtKitapTuru_Enter);
+            this.txtKitapTuru.Leave += new System.EventHandler(this.TxtKitapTuru_Leave);
             // 
             // txtKitapAdi
             // 
-            this.txtKitapAdi.Location = new System.Drawing.Point(233, 58);
+            this.txtKitapAdi.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtKitapAdi.ForeColor = System.Drawing.Color.DimGray;
+            this.txtKitapAdi.Location = new System.Drawing.Point(233, 55);
             this.txtKitapAdi.Name = "txtKitapAdi";
-            this.txtKitapAdi.Size = new System.Drawing.Size(151, 20);
+            this.txtKitapAdi.Size = new System.Drawing.Size(151, 27);
             this.txtKitapAdi.TabIndex = 23;
+            this.txtKitapAdi.Text = "--Kitap Adı Giriniz--";
+            this.txtKitapAdi.Enter += new System.EventHandler(this.TxtKitapAdi_Enter);
+            this.txtKitapAdi.Leave += new System.EventHandler(this.TxtKitapAdi_Leave);
             // 
             // txtKitapNo
             // 
-            this.txtKitapNo.Location = new System.Drawing.Point(233, 20);
+            this.txtKitapNo.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtKitapNo.ForeColor = System.Drawing.Color.DimGray;
+            this.txtKitapNo.Location = new System.Drawing.Point(233, 17);
             this.txtKitapNo.Name = "txtKitapNo";
-            this.txtKitapNo.Size = new System.Drawing.Size(151, 20);
+            this.txtKitapNo.Size = new System.Drawing.Size(151, 27);
             this.txtKitapNo.TabIndex = 22;
+            this.txtKitapNo.Text = "--Kitap No Giriniz--";
+            this.txtKitapNo.Enter += new System.EventHandler(this.TxtKitapNo_Enter);
+            this.txtKitapNo.Leave += new System.EventHandler(this.TxtKitapNo_Leave);
             // 
             // label6
             // 
             this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label6.Location = new System.Drawing.Point(84, 197);
+            this.label6.ForeColor = System.Drawing.Color.White;
+            this.label6.Location = new System.Drawing.Point(94, 200);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(96, 21);
             this.label6.TabIndex = 21;
@@ -127,8 +159,10 @@
             // label5
             // 
             this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label5.Location = new System.Drawing.Point(85, 161);
+            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.Location = new System.Drawing.Point(95, 164);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(58, 21);
             this.label5.TabIndex = 20;
@@ -137,8 +171,10 @@
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label4.Location = new System.Drawing.Point(85, 126);
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(95, 129);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(97, 21);
             this.label4.TabIndex = 19;
@@ -147,8 +183,10 @@
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label3.Location = new System.Drawing.Point(85, 91);
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(95, 94);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(88, 21);
             this.label3.TabIndex = 18;
@@ -157,8 +195,10 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label2.Location = new System.Drawing.Point(85, 55);
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(95, 58);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(82, 21);
             this.label2.TabIndex = 17;
@@ -166,16 +206,23 @@
             // 
             // txtYayinEvi
             // 
-            this.txtYayinEvi.Location = new System.Drawing.Point(233, 237);
+            this.txtYayinEvi.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtYayinEvi.ForeColor = System.Drawing.Color.DimGray;
+            this.txtYayinEvi.Location = new System.Drawing.Point(233, 234);
             this.txtYayinEvi.Name = "txtYayinEvi";
-            this.txtYayinEvi.Size = new System.Drawing.Size(151, 20);
+            this.txtYayinEvi.Size = new System.Drawing.Size(151, 27);
             this.txtYayinEvi.TabIndex = 30;
+            this.txtYayinEvi.Text = "--Yayın Evi Giriniz--";
+            this.txtYayinEvi.Enter += new System.EventHandler(this.TxtYayinEvi_Enter);
+            this.txtYayinEvi.Leave += new System.EventHandler(this.TxtYayinEvi_Leave);
             // 
             // label7
             // 
             this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label7.Location = new System.Drawing.Point(84, 234);
+            this.label7.ForeColor = System.Drawing.Color.White;
+            this.label7.Location = new System.Drawing.Point(94, 237);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(79, 21);
             this.label7.TabIndex = 29;
@@ -183,16 +230,23 @@
             // 
             // txtStok
             // 
-            this.txtStok.Location = new System.Drawing.Point(233, 274);
+            this.txtStok.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtStok.ForeColor = System.Drawing.Color.DimGray;
+            this.txtStok.Location = new System.Drawing.Point(233, 271);
             this.txtStok.Name = "txtStok";
-            this.txtStok.Size = new System.Drawing.Size(151, 20);
+            this.txtStok.Size = new System.Drawing.Size(151, 27);
             this.txtStok.TabIndex = 32;
+            this.txtStok.Text = "--Stok Giriniz--";
+            this.txtStok.Enter += new System.EventHandler(this.TxtStok_Enter);
+            this.txtStok.Leave += new System.EventHandler(this.TxtStok_Leave);
             // 
             // label8
             // 
             this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label8.Location = new System.Drawing.Point(84, 271);
+            this.label8.ForeColor = System.Drawing.Color.White;
+            this.label8.Location = new System.Drawing.Point(94, 274);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(43, 21);
             this.label8.TabIndex = 31;
@@ -201,8 +255,10 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.Location = new System.Drawing.Point(85, 17);
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(95, 20);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(77, 21);
             this.label1.TabIndex = 33;

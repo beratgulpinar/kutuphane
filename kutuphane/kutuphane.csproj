@@ -52,11 +52,17 @@
     <Compile Include="FormAnasayfa.Designer.cs">
       <DependentUpon>FormAnasayfa.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormGiris.cs">
+    <Compile Include="FormAdminGiris.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormGiris.Designer.cs">
-      <DependentUpon>FormGiris.cs</DependentUpon>
+    <Compile Include="FormAdminGiris.Designer.cs">
+      <DependentUpon>FormAdminGiris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormGirisSecim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormGirisSecim.Designer.cs">
+      <DependentUpon>FormGirisSecim.cs</DependentUpon>
     </Compile>
     <Compile Include="FormKitapKayit.cs">
       <SubType>Form</SubType>
@@ -82,11 +88,23 @@
     <Compile Include="FormKitapTeslim.Designer.cs">
       <DependentUpon>FormKitapTeslim.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormUyeGiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormUyeGiris.Designer.cs">
+      <DependentUpon>FormUyeGiris.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormUyeKayit.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormUyeKayit.Designer.cs">
       <DependentUpon>FormUyeKayit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormUyeKitapListesi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormUyeKitapListesi.Designer.cs">
+      <DependentUpon>FormUyeKitapListesi.cs</DependentUpon>
     </Compile>
     <Compile Include="FormUyeListesi.cs">
       <SubType>Form</SubType>
@@ -99,8 +117,11 @@
     <EmbeddedResource Include="FormAnasayfa.resx">
       <DependentUpon>FormAnasayfa.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormGiris.resx">
-      <DependentUpon>FormGiris.cs</DependentUpon>
+    <EmbeddedResource Include="FormAdminGiris.resx">
+      <DependentUpon>FormAdminGiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormGirisSecim.resx">
+      <DependentUpon>FormGirisSecim.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormKitapKayit.resx">
       <DependentUpon>FormKitapKayit.cs</DependentUpon>
@@ -114,8 +135,14 @@
     <EmbeddedResource Include="FormKitapTeslim.resx">
       <DependentUpon>FormKitapTeslim.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormUyeGiris.resx">
+      <DependentUpon>FormUyeGiris.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormUyeKayit.resx">
       <DependentUpon>FormUyeKayit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormUyeKitapListesi.resx">
+      <DependentUpon>FormUyeKitapListesi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormUyeListesi.resx">
       <DependentUpon>FormUyeListesi.cs</DependentUpon>

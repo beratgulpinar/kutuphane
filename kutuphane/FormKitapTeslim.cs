@@ -59,5 +59,23 @@ namespace kutuphane
 
             sqlConn.Close();
         }
+
+        private void TxtKitapNo_Enter(object sender, EventArgs e)
+        {
+            if (txtKitapNo.Text == "--Kitap No Giriniz--")
+            {
+                txtKitapNo.Text = "";
+                txtKitapNo.ForeColor = Color.Black;
+            }
+        }
+
+        private void TxtKitapNo_Leave(object sender, EventArgs e)
+        {
+            if (txtKitapNo.Text == "")
+            {
+                txtKitapNo.Text = "--Kitap No Giriniz--";
+                txtKitapNo.ForeColor = Color.DimGray;
+            }
+        }
     }
 }
