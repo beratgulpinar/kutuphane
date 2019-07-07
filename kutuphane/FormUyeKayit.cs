@@ -13,7 +13,6 @@ namespace kutuphane
 {
     public partial class FormUyeKayit : Form
     {
-        
 
         public FormUyeKayit()
         {
